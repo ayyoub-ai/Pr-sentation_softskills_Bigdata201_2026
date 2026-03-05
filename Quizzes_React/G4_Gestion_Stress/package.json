@@ -1,0 +1,14 @@
+{
+    "name": "human-vs-ai-stress-game",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+        "backend": "cd backend && node server.js",
+        "frontend": "cd frontend && npx vite",
+        "install-all": "cd backend && npm install && cd ../frontend && npm install"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
